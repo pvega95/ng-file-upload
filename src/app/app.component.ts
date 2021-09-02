@@ -34,7 +34,7 @@ export class AppComponent {
     category: new FormControl('60ff58efa8d14836ff6de739'),
     name: new FormControl(`Producto ${Math.random() * 1000}`),
     sku: new FormControl(null),
-    images: new FormControl(null, [Validators.required, requiredFileType('png')])
+    images: new FormControl(null, [Validators.required, requiredFileType(['png','jpg'])])
   });
   success = false;
 
