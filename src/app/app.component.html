@@ -11,10 +11,10 @@
 
 
     <div class="form-group">
-      <app-file-upload formControlName="image" [progress]="progress"></app-file-upload>
+      <app-file-upload formControlName="images" [progress]="progress"></app-file-upload>
       <div class="invalid-feedback" style="display: block">
-        <ng-container *ngIf="hasError('image', 'required')">This field is required</ng-container>
-        <ng-container *ngIf="hasError('image', 'requiredFileType')">Only PNG 🤡</ng-container>
+        <ng-container *ngIf="hasError('images', 'required')">This field is required</ng-container>
+        <ng-container *ngIf="hasError('images', 'requiredFileType')">Only PNG 🤡</ng-container>
       </div>
     </div>
 
